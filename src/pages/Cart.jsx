@@ -7,24 +7,13 @@ import "./Cart.css";
 export default function Cart() {
   const { items, totalItems, totalPrice, updateQuantity, removeItem } = useCart();
 
-<<<<<<< HEAD
   const hasItems = items.length > 0;
 
-=======
-  // Verifica se há itens no carrinho
-  const hasItems = items.length > 0;
-
-  // Renderização da página com base no estado do carrinho
->>>>>>> a51a1c2dbdf8a2e204428f066de2a41ee2ab70a3
   return (
     <main className="cart-page">
       <h2>Carrinho de Compras</h2>
 
-<<<<<<< HEAD
       { }
-=======
-      { /** Se não houver itens, mostrar mensagem de carrinho vazio */ }
->>>>>>> a51a1c2dbdf8a2e204428f066de2a41ee2ab70a3
       {!hasItems && (
         <div className="cart-empty">
           <p>Seu carrinho está vazio.</p>
@@ -34,11 +23,7 @@ export default function Cart() {
         </div>
       )}
 
-<<<<<<< HEAD
       {  }
-=======
-      { /** Se houver itens, mostrar a lista de produtos no carrinho */ }
->>>>>>> a51a1c2dbdf8a2e204428f066de2a41ee2ab70a3
       {hasItems && (
         <>
           <section className="cart-list">
@@ -101,11 +86,7 @@ export default function Cart() {
                 Finalizar pedido
               </Button>
 
-<<<<<<< HEAD
               { }
-=======
-              { /** Botão para continuar comprando, que leva de volta ao catálogo */ }
->>>>>>> a51a1c2dbdf8a2e204428f066de2a41ee2ab70a3
               <Link to='/' className="btn-default btn-secondary">
                 Continuar comprando
               </Link>
